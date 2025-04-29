@@ -1,23 +1,93 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body,html {
     width: 100vw;
     height: 100vh;
-    margin: 10px;
+    background-color: rgba(211, 211, 211, 0.137);
 }
+
+/*---Cabecalho---*/
+
 header {
-    height: 100px;
+    height: 15vh;
+    width: 100vw;
+    padding: 0px 10px;
+    display: block;
+
+}
+.logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    float: left;
+}
+.logo > a > img {
+    width: 75px;
+}
+
+.logo > p{
+    color: rgba(37, 37, 37, 0.952);
+    letter-spacing: .5px;
+}
+
+.logo > p > span {
+    font-size: 11px;
+    color: rgb(68, 68, 68);
 }
 menu {
-    padding: 20px;
+    float: right;
     margin: 10px;
+    padding-top: 10px;
+}
+
+menu > a {
+    font-size: .9rem;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(68, 68, 68) ;
+}
+
+menu > a:hover {
+    background-color: #61a49dab;
+    color: white;
+    border-radius: 5px;
+    transition: ease-in-out 0.4s;
+
+}
+
+/*---Fim cabecalho---*/
+
+/*---Principal--*/
+
+#home {
+    height: 45vh;
+    padding: 20px;
+    display: flex;
+    flex: nowrap;
+    justify-content: space-between;
+
+}
+
+.txt > h1 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    color: rgba(37, 37, 37, 0.952);
+}
+
+.txt > p {
+    margin-bottom: 20px;
+}
+
+.quadro {
+    width: 200px;
+    background-color: #61a49da4;
+    border-radius: 100px 100px 0px 0px;
 }
