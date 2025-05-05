@@ -123,7 +123,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: rgb(241, 241, 241);
-
+    text-align: center;
 }
 
 .txt > h1 {
@@ -147,8 +147,8 @@ main {
 }
 
 .agendar {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 30px;
     background-color: #61a49d;
     padding: 8px 13px;
     border-radius: 8px;
