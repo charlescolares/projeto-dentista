@@ -127,12 +127,13 @@ main {
 }
 
 .txt > h1 {
-    font-size: xx-large;
+    font-size: 3rem;
     margin-bottom: 10px;
     color: rgba(37, 37, 37, 0.952);
 }
 
 .txt > p {
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color:  rgb(51, 51, 51);
 }
@@ -146,6 +147,8 @@ main {
 }
 
 .agendar {
+    width: 200px;
+    height: 50px;
     background-color: #61a49d;
     padding: 8px 13px;
     border-radius: 8px;
