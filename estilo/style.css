@@ -120,6 +120,7 @@ main {
     padding: 0px 20px;
     display: flex;
     flex: nowrap;
+    align-items: center;
     justify-content: center;
     background-color: rgb(241, 241, 241);
 

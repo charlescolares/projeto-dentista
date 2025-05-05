@@ -24,9 +24,9 @@
 
         <nav id="menuNav">
             <li>
-                <ul><a href="#home" onclick="menu()">Início</a> </ul>
-                <ul><a href="#sobre" onclick="menu()">Sobre</a></ul>
-                <ul><a href="#contato" onclick="menu()">Contato</a></ul>
+                <ul><a href="#home" onclick="menu2()">Início</a> </ul>
+                <ul><a href="#sobre" onclick="menu2()">Sobre</a></ul>
+                <ul><a href="#contato" onclick="menu2()">Contato</a></ul>
             </li>
         </nav>
     </header>
@@ -74,6 +74,17 @@
 
     <script>
         function menu(){
+            if(menuNav.style.display == 'flex'){
+                menuNav.style.display = 'none'
+                burguer.innerText == 'close'
+                burguer.innerText = 'menu'
+            }else{
+                menuNav.style.display = 'flex'
+                burguer.innerText = 'close'
+            }  
+        }
+
+        function menu2(){
             if(menuNav.style.display == 'flex'){
                 menuNav.style.display = 'none'
                 burguer.innerText == 'close'
