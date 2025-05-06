@@ -120,6 +120,7 @@ main {
     padding: 0px 20px;
     display: flex;
     flex: nowrap;
+    align-items: end;
     justify-content: space-between;
     background-color: rgb(241, 241, 241);
 
@@ -149,6 +150,7 @@ main {
 .agendar {
     background-color: #61a49d;
     margin-top: 20px;
+    margin-bottom: 50px;
     padding: 8px 13px;
     border-radius: 8px;
     color: white;
@@ -187,6 +189,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 3px #61a49d6e;
 }
+
 
 .serv > h3 {
     margin: 10px;
