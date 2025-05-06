@@ -112,7 +112,7 @@ nav > li> ul > a:hover{
 
 main {
     background-color: white;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 #home {
@@ -232,6 +232,7 @@ main {
 }
 
 .about > img {
+    fill-opacity: 50%;
     width: 100%;
     border: 1px solid #61a49d6e;
     border-radius: 0px 0px 10px 10px;
