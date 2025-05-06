@@ -129,6 +129,7 @@ main {
     font-size: xx-large;
     margin-bottom: 10px;
     color: rgba(37, 37, 37, 0.952);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
 }
 
 .txt > p {
@@ -172,6 +173,7 @@ main {
 
 #servicos > h2 {
     margin: 30px 0px 30px 0px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.199);
 }
 
 .serv {
@@ -208,6 +210,7 @@ main {
     margin: 30px 0px 30px 0px;
     text-align: center;
     color: rgba(37, 37, 37, 0.952);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.199);
 }
 
 .about {
@@ -222,10 +225,12 @@ main {
     background-color: #61a49d;
     color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .about > img {
-    width: 190px;
+    width: 100%;
+    border: 1px solid #61a49d6e;
+    border-radius: 0px 0px 10px 10px;
 }
 
