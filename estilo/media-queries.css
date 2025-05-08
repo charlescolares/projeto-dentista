@@ -7,7 +7,30 @@
 }
 
 @media screen and (min-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, #5f2c82) ;
+    
+    #menu > i {
+        display:none;
+    }
+
+    #menuNav {
+        display: inline-block;
+        flex-direction: row;
+        left: 85%;
+        top:-60%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        border: 1px solid red;
+    }
+
+   
+    
+    nav > li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        text-align: center;
     }
 }
