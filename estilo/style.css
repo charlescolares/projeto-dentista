@@ -122,8 +122,9 @@ main {
     display: flex;
     flex: nowrap;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(241, 241, 241);
+    text-align: center;
 }
 
 
