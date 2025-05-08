@@ -240,7 +240,6 @@ main {
 }
 
 .about > img {
-    fill-opacity: 50%;
     width: 100%;
     border: 1px solid #61a49d6e;
     border-radius: 0px 0px 10px 10px;
