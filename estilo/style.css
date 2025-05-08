@@ -121,11 +121,11 @@ main {
     padding: 0px 20px;
     display: flex;
     flex: nowrap;
-    align-items: end;
+    align-items:center;
     justify-content: space-between;
     background-color: rgb(241, 241, 241);
-
 }
+
 
 .txt > h1 {
     font-size: xx-large;
@@ -135,8 +135,12 @@ main {
 }
 
 .txt > p {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     color:  rgb(51, 51, 51);
+}
+
+.txt > a {
+    text-decoration: none;
 }
 
 .quadro {
