@@ -15,8 +15,8 @@
     #menuNav {
         display: inline-block;
         flex-direction: row;
-        left: 85%;
-        top:-60%;
+        left: 80%;
+        top:-80%;
         width: 20%;
         display: flex;
         align-items: center;
@@ -31,5 +31,26 @@
         flex-direction: row;
         list-style-type: none;
         text-align: center;
+    }
+
+    #servicos {
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 20px;
+        color: rgba(37, 37, 37, 0.952);
+        text-align: center;
+        
+    }
+
+    .serv { 
+        margin-right: 50px;
+        overflow: hidden;
+        interpol
+    }
+    
+    .serv:hover {
+        height: auto;
     }
 }
