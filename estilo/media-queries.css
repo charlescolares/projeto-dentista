@@ -1,16 +1,50 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82) ;
+    i#burguer {
+        display: none;
+    }
+
+    #menuNav {
+        display: block;
+        background-color: transparent;
+        border: 1px solid red;
+        z-index: 10000;
+        
+    }
+
+    nav > ul {
+        display: inline-block;
+        display: flex;
+        flex-direction: row; 
+        justify-content:right;
+
+    }
+
+    .about {
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about > div.paragrafo {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .about > div.imagem {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    
+    .about > div.imagem > img { 
+        border-radius: 0px 10px 10px 0px ;
     }
 
 }
 
+/*---Desktop---*/
+
 @media screen and (min-width: 992px) {
-    
-    #menu > i {
-        display:none;
-    }
 
     #menuNav {
         display: inline-block;
@@ -41,16 +75,36 @@
         padding: 20px 20px;
         color: rgba(37, 37, 37, 0.952);
         text-align: center;
-        
     }
 
     .serv { 
         margin-right: 50px;
         overflow: hidden;
-        interpol
+        transition: height .5s;
+        interpolate-size: allow-keywords;
     }
     
     .serv:hover {
         height: auto;
+    }
+
+    .about {
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about > div.paragrafo {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .about > div.imagem {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    
+    .about > div.imagem > img { 
+        border-radius: 0px 10px 10px 0px ;
     }
 }

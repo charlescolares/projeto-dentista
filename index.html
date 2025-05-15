@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Dra.Kelen Grando</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
 
         <div class="logo">
@@ -23,11 +23,11 @@
         </div>
 
         <nav id="menuNav">
-            <li>
-                <ul><a href="#home" onclick="menu()">Início</a> </ul>
-                <ul><a href="#sobre" onclick="menu()">Sobre</a></ul>
-                <ul><a href="#contato" onclick="menu()">Contato</a></ul>
-            </li>
+            <ul>
+                <li><a href="#home" onclick="menu()">Início</a> </li>
+                <li><a href="#sobre" onclick="menu()">Sobre</a></li>
+                <li><a href="#contato" onclick="menu()">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -57,7 +57,7 @@
             <div class="serv">
                 <h3>Ortodontia</h3>
                 <img src="imagens/ortodontia.png" alt="ortodontia">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam sequi minus dolorem. Velit aliquid dolore maxime, ex laudantium eligendi</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam sequi minus dolorem. Velit aliquid dolore maxime, ex laudantium eligendi lore</p>
             </div>
             <div class="serv">
                 <h3>Implantes</h3>
@@ -68,8 +68,10 @@
         <section id="sobre">
             <h2>Sobre mim</h2>
             <div class="about">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nisi magni quia. Explicabo porro laudantium quis odio at accusantium ea, voluptates nobis totam dignissimos, sunt a repudiandae quia dolorum similique!</p>
-                <img src="imagens/dentista.jpg" alt="">
+                <div class="paragrafo">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nisi magni quia. Explicabo porro laudantiu quis odio at accusantium ea, voluptates nobis totam dignissimos, sunt a repudiandae quia dolorum similique!</p>
+                </div>
+                <div class="imagem"><img src="imagens/dentista.jpg" alt=""></div>
             </div>
             
         </section>
@@ -89,6 +91,14 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                menuNav.style.display = 'block'
+            } else {
+                menuNav.style.display ='none'
+            }
+        }
+
         function menu(){
             if(menuNav.style.display == 'flex'){
                 menuNav.style.display = 'none'
@@ -99,6 +109,8 @@
                 burguer.innerText = 'close'
             }  
         }
+
+
     </script>
 </body>
 </html>
