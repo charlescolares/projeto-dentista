@@ -6,10 +6,10 @@
 
     #menuNav {
         display: block;
+        position: absolute;
+        top: -75px;
         background-color: transparent;
-        border: 1px solid red;
-        z-index: 10000;
-        
+        padding-right: 20px;
     }
 
     nav > ul {
@@ -17,8 +17,34 @@
         display: flex;
         flex-direction: row; 
         justify-content:right;
-
     }
+
+    main > h2 {
+    margin: 30px;
+    text-align: left;
+    }
+
+    #servicos {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 20px 20px;
+        margin: 0 auto;
+        color: rgba(37, 37, 37, 0.952);
+    }
+
+    .serv { 
+        flex: 1 1 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        transition: height .5s;
+        interpolate-size: allow-keywords;
+    }
+    
+    .serv:hover {
+        height: auto;
+    }
+
 
     .about {
         display: flex;
@@ -46,25 +72,28 @@
 
 @media screen and (min-width: 992px) {
 
-    #menuNav {
-        display: inline-block;
-        flex-direction: row;
-        left: 80%;
-        top:-80%;
-        width: 20%;
-        display: flex;
-        align-items: center;
-        background-color: rgb(241, 241, 241);
-        border: 1px solid red;
+    i#burguer {
+        display: none;
     }
 
-    
-    nav > li {
-        width: 100%;
+    #menuNav {
+        display: block;
+        position: absolute;
+        top: -75px;
+        background-color: transparent;
+        padding-right: 20px;
+    }
+
+    nav > ul {
+        display: inline-block;
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        text-align: center;
+        flex-direction: row; 
+        justify-content:right;
+    }
+
+    main > h2 {
+    margin: 30px;
+    text-align: left;
     }
 
     #servicos {
@@ -73,12 +102,13 @@
         flex-direction: row;
         align-items: center;
         padding: 20px 20px;
+        margin: 0 auto;
         color: rgba(37, 37, 37, 0.952);
-        text-align: center;
     }
 
     .serv { 
-        margin-right: 50px;
+        flex: 1 1 300px;
+        margin: 0 auto;
         overflow: hidden;
         transition: height .5s;
         interpolate-size: allow-keywords;
