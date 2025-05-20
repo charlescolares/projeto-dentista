@@ -4,24 +4,35 @@
         display: none;
     }
 
-    #menuNav {
-        display: block;
-        position: absolute;
-        top: -75px;
-        background-color: transparent;
-        padding-right: 20px;
+    header {
+        display: none;
     }
 
-    nav > ul {
-        display: inline-block;
-        display: flex;
-        flex-direction: row; 
-        justify-content:right;
+    main {
+        margin-top: 0;
     }
 
     main > h2 {
     margin: 30px;
     text-align: left;
+    }
+
+    #home {
+        height: 60vh;
+        position: relative;
+        z-index: 1;
+        justify-content: left;
+    }
+    #home::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../imagens/background2.jpg) no-repeat  right ;
+        background-size: cover;
+        opacity: 0.6;
+        z-index: -1;
     }
 
     #servicos {
@@ -76,24 +87,35 @@
         display: none;
     }
 
-    #menuNav {
-        display: block;
-        position: absolute;
-        top: -75px;
-        background-color: transparent;
-        padding-right: 20px;
+    header {
+        display: none;
     }
 
-    nav > ul {
-        display: inline-block;
-        display: flex;
-        flex-direction: row; 
-        justify-content:right;
+    main {
+        margin-top: 0;
     }
 
     main > h2 {
     margin: 30px;
     text-align: left;
+    }
+
+    #home {
+        height: 60vh;
+        position: relative;
+        z-index: 1;
+        justify-content: left;
+    }
+    #home::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../imagens/background2.jpg) no-repeat  right ;
+        background-size: cover;
+        opacity: 0.6;
+        z-index: -1;
     }
 
     #servicos {
