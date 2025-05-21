@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    body,html {
+    background-color: white;
+    }
+
     i#burguer {
         display: none;
     }
@@ -33,6 +37,14 @@
         background-size: cover;
         opacity: 0.6;
         z-index: -1;
+    }
+
+    .txt {
+        margin-left: 30px;
+    }
+
+    .txt > h1 {
+    color: rgba(37, 37, 37, 0.76);
     }
 
     #servicos {
@@ -83,16 +95,16 @@
 
 @media screen and (min-width: 992px) {
 
+    body,html {
+    background-color: white;
+    }
+
     i#burguer {
         display: none;
     }
 
     header {
         display: none;
-    }
-
-    main {
-        margin-top: 0;
     }
 
     main > h2 {
@@ -116,6 +128,14 @@
         background-size: cover;
         opacity: 0.6;
         z-index: -1;
+    }
+
+    .txt {
+        margin-left: 30px;
+    }
+
+    .txt > h1 {
+    color: rgba(37, 37, 37, 0.76);
     }
 
     #servicos {

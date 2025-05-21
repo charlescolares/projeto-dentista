@@ -106,24 +106,16 @@ nav > ul > li > a:hover{
     color: white;
 
 }
-#menuNav {
-    display: none;
-    flex-direction: column;
-}
-
-
 
 /*---Fim cabecalho---*/
 
 /*---Principal--*/
 
 main {
-    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
     color: rgba(37, 37, 37, 0.952);
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.199);
-    border-radius: 10px;
 }
 
 main > h2 {
@@ -134,7 +126,6 @@ main > h2 {
 
 #home {
     height: 80vh;
-    padding: 0px 20px;
     display: flex;
     flex: nowrap;
     align-items:center;
@@ -147,8 +138,8 @@ main > h2 {
 .txt > h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: rgba(37, 37, 37, 0.952);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+    color: rgba(37, 37, 37, 0.87);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
 }
 
 .txt > p {
@@ -161,19 +152,8 @@ main > h2 {
     text-decoration: none;
 }
 
-.quadro {
-    width: 200px;
-    height: 80%;
-    background-color: #61a49dcb;
-    border-radius: 100px 100px 0px 0px;
-}
-
-.quadro >img {
-    width: 500px;
-}
-
 .agendar {
-    background-color: #61a49d;
+    background-color: #61a49da9;
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 8px 13px;
@@ -213,8 +193,14 @@ main > h2 {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #61a49d6e;
+    overflow: hidden;
+    transition: height .5s;
+    interpolate-size: allow-keywords;
 }
 
+.serv:hover {
+    height: auto;
+    }
 
 .serv > h3 {
     margin: 10px;
@@ -251,6 +237,7 @@ main > h2 {
 .about > div.paragrafo {
     background-color: #61a49d;
     color: white;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .about > div.imagem {
@@ -272,7 +259,9 @@ main > h2 {
     color: white;
 }
 
-
+#resultados {
+    background-color: #61a49d;
+}
 
 #contato {
     padding: 0px 20px;
