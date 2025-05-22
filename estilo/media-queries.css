@@ -56,13 +56,6 @@
     .serv { 
         flex: 1 1 300px;
         margin: 0 auto;
-        overflow: hidden;
-        transition: height .5s;
-        interpolate-size: allow-keywords;
-    }
-    
-    .serv:hover {
-        height: auto;
     }
 
 
@@ -144,14 +137,8 @@
     .serv { 
         flex: 1 1 300px;
         margin: 0 auto;
-        overflow: hidden;
-        transition: height .5s;
-        interpolate-size: allow-keywords;
     }
-    
-    .serv:hover {
-        height: auto;
-    }
+
 
     .about {
         display: flex;
