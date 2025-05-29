@@ -10,11 +10,6 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar{
-    width: 0;
-    height: 0;
-}
-
 body,html {
     width: 100%;
     height: 100vh;
@@ -173,18 +168,27 @@ main > h2 {
     font-size: 1.1em;
 }
 
+
 .agendar {
+    position: relative;
     background-color: #61a49d;
     padding: 15px 50px;
+    margin-bottom: 30px;
     border-radius: 100px;
     color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
     border: none;
     cursor: pointer;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+    transition: transform .4s ease;
 }
 
 .agendar:hover {
-    background-color: #61a49dd0;
+    background-color: white;
+    color: #61a49d;
+    transform: scale(90%);
 }
 
 #sobre {
@@ -236,6 +240,8 @@ main > h2 {
     border-radius: 15px;
 } 
 
+/*------Serviços--------*/
+
 #servicos {
     display: flex;
     flex: wrap;
@@ -246,7 +252,12 @@ main > h2 {
     text-align: center;
 }
 
-#servicos > h2 {
+.title-serv {
+    color: #61a49d;
+    padding-bottom: 20px;
+}
+
+h2 {
     font-size: 1.8em;
 }
 
@@ -254,43 +265,59 @@ main > h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
+    position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
+    overflow: hidden;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px #61a49d6e;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
+    transition: transform .4s ease;
+}
+
+.serv:hover {
+    transform: scale(103%);
 }
 
 .serv > h3 {
-    margin: 10px;
-    color: #61a49d;
+    position: relative;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.7em;
 }
 
-.serv > p {
-    margin: 8px;
-    text-align: center;
-}
 
-.serv > img {
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    
+    object-fit: cover;
+    opacity: 80%;
 }
 
-
+/*-----Contato-----*/
 
 #contato {
     padding: 0px 20px;
+    transition: transform .4s ease;
 }
 
-#contato > h3 {
-    margin: 30px 0px 30px 0px;
-    text-align: left;
-    color: rgba(37, 37, 37, 0.952);
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.199);
+#contato > div > a >img:hover{
+    transform: scale(105%);
+}
+
+.title-contato {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #61a49d;
 }
 
 #contato > p {
+    font-size: 1.2em;
+    text-align:center;
     color: rgba(37, 37, 37, 0.952);
     margin-bottom: 20px;
 }
@@ -305,13 +332,72 @@ main > h2 {
     margin-bottom: 10px;
 }
 
+/*-----Rodape-----*/
+
 footer {
+    margin-top: 20px;
     color: rgba(37, 37, 37, 0.952);
-    background-color: rgb(241, 241, 241);
+    background-color: black;
     text-align: center;
-    padding: 30px;
 }
 
-.rodape{
+#rodape {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: black;
+    text-align: left;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.logo-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-rodape > a > img  {
+    width: 200px;
+    
+} 
+
+.informacoes {
+    color: white;
+    margin-left: 20px;
+    
+}
+
+.informacoes > h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:#61a49d ;
+}
+
+.informacoes > p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+} 
+
+.informacoes > ul {
+    list-style-type: none;
+    
+}
+.informacoes > ul > li {
     margin-bottom: 20px;
 }
+
+.informacoes > ul > li > a {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+}
+
+.rodape2 {
+    padding:50px 0px 10px 0px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.rodape2 > p {
+    margin-bottom: 30px;
+} 

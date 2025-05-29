@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    body,html {
+        background-color: white;
+    }
+
     i#burguer {
         display: none;
     }
@@ -10,11 +14,6 @@
 
     main {
         margin-top: 0;
-    }
-
-    main > h2 {
-    margin: 30px;
-    text-align: left;
     }
 
     #home {
@@ -43,6 +42,34 @@
     .txt > h1 {
     color: rgba(37, 37, 37, 0.76);
     }
+    
+/*------Sobre-----*/
+
+    .title > h2{
+        font-size: 2.3em;
+    }
+
+    .about {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about > div.paragrafo {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .imagem {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 2px;
+    }
+    
+    .about > div.imagem > img { 
+        margin-right: 10px;
+    }
+
 
     #servicos {
         display: flex;
@@ -53,37 +80,46 @@
         color: rgba(37, 37, 37, 0.952);
     }
 
+    .title-serv {
+        font-size: 2.5em;
+    }
+
     .serv { 
         flex: 1 1 300px;
-        margin: 0 auto;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
+    #rodape {
+        flex-flow: row nowrap;
+        justify-content:space-between ;
+    }
 
-    .about {
+    .logo-rodape {
+        justify-content: left;
+    }
+
+    .informacoes {
+        margin-right: 30px;
+    }
+
+    #contato {
         display: flex;
-        flex: wrap;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0px;
     }
 
-    .about > div.paragrafo {
-        border-radius: 10px 0px 0px 10px;
-    }
-
-    .about > div.imagem {
-        margin-top: 0px;
-        margin-left: 2px;
-    }
-    
-    .about > div.imagem > img { 
-        border-radius: 0px 10px 10px 0px ;
-    }
 
 }
 
 /*---Desktop---*/
 
 @media screen and (min-width: 992px) {
+
+    body,html {
+        background-color: white;
+    }
 
     i#burguer {
         display: none;
@@ -95,11 +131,6 @@
 
     main {
         border-radius: 10px;
-    }
-
-    main > h2 {
-    margin: 30px;
-    text-align: left;
     }
 
     #home {
@@ -124,6 +155,26 @@
         margin-left: 30px;
     }
 
+    .about {
+    display: flex;
+    flex-flow: row nowrap;
+    }
+
+    .about > div.paragrafo {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .imagem {
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-left: 2px;
+    }
+    
+    .imagem > img { 
+        margin-right: 10px;
+    }
+
+
     #servicos {
         display: flex;
         flex: wrap;
@@ -139,24 +190,23 @@
         margin: 0 auto;
     }
 
+    #rodape {
+        flex-flow: row nowrap;
+        justify-content:space-between ;
+    }
 
-    .about {
+    .logo-rodape {
+        justify-content: left;
+    }
+
+    .informacoes {
+        margin-right: 30px;
+    }
+
+    #contato {
         display: flex;
-        flex: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about > div.paragrafo {
-        border-radius: 10px 0px 0px 10px;
-    }
-
-    .about > div.imagem {
-        margin-top: 0px;
-        margin-left: 2px;
-    }
-    
-    .about > div.imagem > img { 
-        border-radius: 0px 10px 10px 0px ;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0px;
     }
 }
