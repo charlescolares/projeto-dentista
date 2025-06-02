@@ -187,6 +187,10 @@
         color: rgba(37, 37, 37, 0.952);
     }
 
+    .title-serv{
+        font-size: 3em;
+    }
+
     .serv { 
         flex: 1 1 300px;
         margin-right:20px;
